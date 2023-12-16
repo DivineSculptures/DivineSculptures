@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+#OurTeam
+{
+   
+   background: url(./images/MicrosoftTeams-image\ \(40\).png);
+   background-size: cover;
+    background-repeat: no-repeat;
+}
+#OurTeam h1 {
+    text-align: center;
+    margin-top: 70px;
+    color: #fff;
+    position: relative;
+    /* Adjust the margin as needed */
+}
+
+
+#OurTeam h1::after {
+    content: '';
+    display: block;
+    width: 80%; /* Adjust the width of the underline */
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #fdfcfc; /* Adjust the color of the underline */
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Adjust the position of the underline */
+    transform: translateX(-50%);
+}
+#MissionVision h2
+{
+    margin-bottom: 20px;
+    
+}
+
+
+.team-container {
+  
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+   
+}
+
+.team-member {
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.description {
+    flex: 1;
+    padding: 20px;
+}
+.description p{
+    text-align: justify;
+}
+#MissionVision {
+    text-align: center;
+    padding: 50px 0;
+    
+}
+
+
+
+.mission-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(45deg, #ffffff 0%, #80ff00 25%, #ffffff 50%, #80ff00 75%, #ffffff 100%);
+}
+.mission-vision-item p ,.team-member p{
+    text-align: justify; /* Justify the text */
+    font-weight: bold;
+    color: #4b4747;
+    opacity: 0.8;
+}
+
+.mission-vision-item {
+    flex: 0 0 100%; /* Full width on small screens */
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#footer p {
+    margin: 5px 0;
+    opacity: 0.7;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+#footer .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer .contact-info p {
+    flex: 0 0 100%;
+    max-width: 300px;
+}
+
+#footer .social-links {
+    margin-top: 20px;
+}
+
+#footer .social-links a {
+    margin: 0 10px;
+}
+.mission-vision-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .mission-vision-item {
+        flex: 0 0 48%; /* Two columns on larger screens */
+    }
+}
+@media screen and (min-width: 768px) {
+    .team-member {
+        flex: 0 0 48%; /* Two columns on larger screens */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .team-member {
+        
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .team-member img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
